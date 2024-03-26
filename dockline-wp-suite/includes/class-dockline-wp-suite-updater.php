@@ -28,7 +28,6 @@ class Dockline_Wp_Suite_Updater
                     'timeout' => 10,
                     'headers' => array(
                         'Accept' => 'application/json',
-                        'Authorization' => 'Bearer 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'
                     )
                 )
             );

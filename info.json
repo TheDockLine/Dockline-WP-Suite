@@ -3,7 +3,7 @@
 	"slug": "docline-wp-suite",
 	"author": "<a href='https://thedockline.com'>Levi Mardis</a>",
 	"version": "1.0.1",
-	"download_url": "https://rudrastyh.com/wp-content/uploads/updater/misha-update-checker.zip",
+	"download_url": "https://github.com/TheDockLine/Dockline-WP-Suite/archive/refs/heads/main.zip",
 	"requires": "3.0",
 	"tested": "5.8",
 	"requires_php": "5.3",
