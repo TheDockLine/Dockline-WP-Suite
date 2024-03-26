@@ -49,7 +49,7 @@ class Dockline_Wp_Suite_Updater
     }
 
 
-    function info($res, $action, $args)
+    public function info($res, $action, $args)
     {
 
         // print_r( $action );

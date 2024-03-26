@@ -193,9 +193,9 @@ class Dockline_Wp_Suite
 
 		$plugin_updater = new Dockline_Wp_Suite_Updater($this->get_plugin_name(), $this->get_version());
 
-		$this->loader->add_filter('plugins_api', $plugin_updater, 'info');
+		$this->loader->add_filter('plugins_api', $plugin_updater, 'info', 20, 3);
 		$this->loader->add_filter('site_transient_update_plugins', $plugin_updater, 'update');
-		$this->loader->add_action('site_transient_update_plugins', $plugin_updater, 'purge');
+		$this->loader->add_action('upgrader_process_complete', $plugin_updater, 'purge', 10, 2);
 	}
 
 	/**
