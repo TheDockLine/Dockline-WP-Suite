@@ -23,7 +23,7 @@ class Dockline_Wp_Suite_Updater
         if (false === $remote || !$this->cache_allowed) {
 
             $remote = wp_remote_get(
-                '"https://raw.githubusercontent.com/TheDockLine/Dockline-WP-Suite/main/info.json',
+                'https://raw.githubusercontent.com/TheDockLine/Dockline-WP-Suite/main/info.json',
                 array(
                     'timeout' => 10,
                     'headers' => array(

@@ -2,6 +2,7 @@
 	"name": "Dockline WP Suite",
 	"slug": "docline-wp-suite",
 	"author": "<a href='https://thedockline.com'>Levi Mardis</a>",
+	"author_profile": "http://profiles.wordpress.org/rudrastyh",
 	"version": "1.0.1",
 	"download_url": "https://github.com/TheDockLine/Dockline-WP-Suite/archive/refs/heads/main.zip",
 	"requires": "3.0",
