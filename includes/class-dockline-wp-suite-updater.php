@@ -11,8 +11,8 @@ class Dockline_Wp_Suite_Updater
     {
         $this->version = $version;
         $this->plugin_name = $plugin_name;
-        $this->cache_key = 'dockline-wp-suite';
-        $this->cache_allowed = false;
+        $this->cache_key = 'dockline_wp_suite';
+        $this->cache_allowed = true;
     }
 
     public function request()
@@ -52,8 +52,8 @@ class Dockline_Wp_Suite_Updater
     public function info($res, $action, $args)
     {
 
-        // print_r( $action );
-        // print_r( $args );
+        print_r($action);
+        print_r($args);
 
         // do nothing if you're not getting plugin information right now
         if ('plugin_information' !== $action) {
