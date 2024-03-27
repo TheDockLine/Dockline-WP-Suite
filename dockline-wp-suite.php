@@ -26,7 +26,7 @@
  */
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
+if (!defined('WPINC')) {
 	die;
 }
 
@@ -35,14 +35,15 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'DOCKLINE_WP_SUITE_VERSION', '1.0.0' );
+define('DOCKLINE_WP_SUITE_VERSION', '1.0.1');
 
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-dockline-wp-suite-activator.php
  */
-function activate_dockline_wp_suite() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-dockline-wp-suite-activator.php';
+function activate_dockline_wp_suite()
+{
+	require_once plugin_dir_path(__FILE__) . 'includes/class-dockline-wp-suite-activator.php';
 	Dockline_Wp_Suite_Activator::activate();
 }
 
@@ -50,19 +51,20 @@ function activate_dockline_wp_suite() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-dockline-wp-suite-deactivator.php
  */
-function deactivate_dockline_wp_suite() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-dockline-wp-suite-deactivator.php';
+function deactivate_dockline_wp_suite()
+{
+	require_once plugin_dir_path(__FILE__) . 'includes/class-dockline-wp-suite-deactivator.php';
 	Dockline_Wp_Suite_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_dockline_wp_suite' );
-register_deactivation_hook( __FILE__, 'deactivate_dockline_wp_suite' );
+register_activation_hook(__FILE__, 'activate_dockline_wp_suite');
+register_deactivation_hook(__FILE__, 'deactivate_dockline_wp_suite');
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-dockline-wp-suite.php';
+require plugin_dir_path(__FILE__) . 'includes/class-dockline-wp-suite.php';
 
 /**
  * Begins execution of the plugin.
@@ -73,10 +75,10 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-dockline-wp-suite.php';
  *
  * @since    1.0.0
  */
-function run_dockline_wp_suite() {
+function run_dockline_wp_suite()
+{
 
 	$plugin = new Dockline_Wp_Suite();
 	$plugin->run();
-
 }
 run_dockline_wp_suite();

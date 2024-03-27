@@ -88,7 +88,6 @@ class Dockline_Wp_Suite_Updater
 
         $res->sections = array(
             'description' => $remote->sections->description,
-            'installation' => $remote->sections->installation,
             'changelog' => $remote->sections->changelog
         );
 
@@ -119,7 +118,7 @@ class Dockline_Wp_Suite_Updater
         ) {
             $res = new stdClass();
             $res->slug = $this->plugin_name;
-            $res->plugin = plugin_basename(__FILE__); // misha-update-plugin/misha-update-plugin.php
+            $res->plugin = dirname(plugin_basename(__DIR__)) . '/' . $this->plugin_name . '.php'; // misha-update-plugin/misha-update-plugin.php
             $res->new_version = $remote->version;
             $res->tested = $remote->tested;
             $res->package = $remote->download_url;

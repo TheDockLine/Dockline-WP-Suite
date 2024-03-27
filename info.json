@@ -2,20 +2,16 @@
 	"name": "Dockline WP Suite",
 	"slug": "dockline-wp-suite",
 	"author": "<a href='https://thedockline.com'>Levi Mardis</a>",
-	"author_profile": "http://profiles.wordpress.org/rudrastyh",
-	"version": "1.1.1",
+	"author_profile": "https://thedockline.com",
+	"version": "1.0.1",
 	"download_url": "https://github.com/TheDockLine/Dockline-WP-Suite/archive/refs/heads/main.zip",
 	"requires": "3.0",
 	"tested": "5.8",
 	"requires_php": "5.3",
-	"last_updated": "2021-01-30 02:10:00",
+	"last_updated": "2024-03-27 12:00:00",
 	"sections": {
-		"description": "This simple plugin does nothing, only gets updates from a custom server",
-		"installation": "Click the activate button and that's it.",
-		"changelog": "<h4>1.0 –  1 august 2021</h4><ul><li>Bug fixes.</li><li>Initital release.</li></ul>"
+		"description": "This plugin is a suite of tools for Dockline websites.",
+		"changelog": "First Release"
 	},
-	"banners": {
-		"low": "https://rudrastyh.com/wp-content/uploads/updater/banner-772x250.jpg",
-		"high": "https://rudrastyh.com/wp-content/uploads/updater/banner-1544x500.jpg"
-	}
+	"banners": {}
 }
