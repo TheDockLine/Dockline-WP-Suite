@@ -52,9 +52,6 @@ class Dockline_Wp_Suite_Updater
     public function info($res, $action, $args)
     {
 
-        print_r($action);
-        print_r($args);
-
         // do nothing if you're not getting plugin information right now
         if ('plugin_information' !== $action) {
             return false;
