@@ -16,7 +16,7 @@
  * Plugin Name:       Dockline WP Suite
  * Plugin URI:        https://thedockline.com
  * Description:       Suite of tools used for Dockline websites.
- * Version:           1.0.3
+ * Version:           1.0.4
  * Author:            Levi
  * Author URI:        https://thedockline.com/
  * License:           GPL-2.0+
