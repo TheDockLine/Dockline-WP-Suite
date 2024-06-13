@@ -4,7 +4,7 @@
 	"author": "<a href='https://thedockline.com'>Levi Mardis</a>",
 	"author_profile": "https://thedockline.com",
 	"version": "1.0.4",
-	"download_url": "https://github.com/TheDockLine/Dockline-WP-Suite/releases/download/v1.0.4/Dockline-WP-Suite.zip",
+	"download_url": "https://github.com/TheDockLine/Dockline-WP-Suite/archive/refs/heads/main.zip",
 	"requires": "3.0",
 	"tested": "5.8",
 	"requires_php": "5.3",
